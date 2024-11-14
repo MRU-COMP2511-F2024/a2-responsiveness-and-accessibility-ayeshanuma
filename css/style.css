@@ -1,0 +1,154 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #5887b5; 
+    color: white;
+    padding: 20px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.logo {
+    max-width: 80px; 
+    height: auto;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    background-color: #fdfdfd;
+    border: 1px solid #ddd;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #004080;
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #d1e7fd;
+}
+
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    color: #0066cc;
+    margin-top: 0;
+}
+
+h2 {
+    color: #0056b3;
+}
+
+th, td {
+    border: 1px solid #004d99; 
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #cce0ff; 
+}
+
+tr:nth-child(even) {
+    background-color: #345c9d33;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.right-image {
+    float: right;
+    margin: 0 0 10px 20px;
+    max-width: 300px;
+    height: auto;
+}
+
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #0056b3;
+    color: white;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+input[type="submit"], input[type="reset"] {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #004494;
+}
+
+.active {
+    color: rgb(51, 166, 189); 
+  }
