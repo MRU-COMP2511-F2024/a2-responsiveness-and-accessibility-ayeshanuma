@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title> Contact Us! </title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Bachelor of Education, experience, how to get in the program ">
+    <meta name="author" content="Ayesha Numa">
+    <meta name="keywords" content="education, teaching, teacher, GPA">
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="Contact">
+    <div class="logo-container">
+        <img src="images/Logo.png" alt="Logo" class="logo">
+        </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lastpage.html">Self-Help Guide</a></li>
+            <li><a href="formandcontact.html" class="active">Contact Us!</a></li> 
+        </ul>
+
+    </nav>
+    <main>
+        <header>
+            <h1> Contact Us! </h1>
+            <p> Fill out this form if you have any concerns and we will get back to you as soon as possible!</p>
+        </header>
+        <section>
+            <h2> Form </h2>
+            <form id="contact" method="get" action="mailto:aapple990@mtroyal.ca">
+                <fieldset>
+                    <legend> Your Contact Information </legend>
+                    <dl>
+						<dt><label for="firstname">Your First Name:<span class="required">*</span></label></dt>
+						<dd><input type="text" id="firstname" name="firstname"></dd>
+                        <dt><label for="lastname">Your Last Name:<span class="required">*</span></label></dt>
+						<dd><input type="text" id="lastname" name="lastname" ></dd>
+						<dt><label for="email">Your Email:<span class="required">*</span></label></dt>
+						<dd><input type="email" id="email" name="email" required placeholder="name@mtroyal.ca"></dd>
+						<dt><label for="phone">Your Phonenumber:<span class="required">*</span></label></dt>
+						<dd><input type="tel" id="phone" name="phone" pattern="\( *?\d\d\d\ *)? *\d\d\d *-? *\d\d\d\d" title="10-didget phone number" placeholder="(403) 200-1234"></dd>
+                        <dt><label for="subject">Inquery subject:<span class="required">*</span></label></dt>
+						<dd><input type="text" id="subject" name="subject" required maxlength="140"></dd>
+						<dt><label for="body">Inquery message:<span class="required">*</span></label></dt>
+						<dd><textarea id="body" name="body" cols="100" rows="5" required></textarea></dd>
+                    </dl>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Information:</legend>
+                <dl>
+                    <dt><em>Your Experience in Education</em></dt>
+                    <dd>
+                        <input type="radio" id="experience-none" name="experience" value="none">
+                        <label for="experience-none">None</label><br>
+                        <input type="radio" id="experience-learning" name="experience" value="learning">
+                        <label for="experience-learning">Learning</label><br>
+                        <input type="radio" id="experience-average" name="experience" value="average">
+                        <label for="experience-average">Average</label><br>
+                        <input type="radio" id="experience-expert" name="experience" value="expert">
+                        <label for="experience-expert">Expert</label><br>
+                    </dd>
+                    
+                    <dt><em>Questions from Us to You</em></dt>
+                    <dd>
+                        <input type="checkbox" name="Passionate" id="Passionate">
+                        <label for="Passionate">Are you passionate about education?</label><br>
+                        <input type="checkbox" name="newsletter" id="newsletter">
+                        <label for="newsletter">Would you like to be added to our newsletter?</label>
+                    </dd>
+                </dl>
+
+                    <br>
+
+                <dl>
+                        <dt>Submit Form</dt>
+                        <dd>
+                            
+                            <input type="submit">
+                            <input type="reset">
+
+                        </dd>
+                 </dl>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p class="author">Website Author: Ayesha Numa and Pawan Tiwana</p>
+    </footer>
+</body>
+
+</html>
