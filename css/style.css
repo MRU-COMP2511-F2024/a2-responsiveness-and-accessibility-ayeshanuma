@@ -5,6 +5,11 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    flex-direction: column;
 }
 
 
@@ -31,6 +36,8 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center; 
 }
 
 nav ul li {
@@ -78,7 +85,15 @@ table tr:hover {
 
 
 main {
+    width: 100%;
+    max-width: 790px;  
+    margin: 0 auto;
     padding: 20px;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+
 }
 
 h1 {
@@ -117,6 +132,11 @@ img {
     height: auto;
 }
 
+iframe {
+    width: 100%;
+    height: auto;
+}
+
 
 footer {
     text-align: center;
@@ -134,6 +154,8 @@ form {
     border: 1px solid #ddd;
     margin-top: 20px;
     border-radius: 5px;
+    width: 100%;
+    max-width: 790px;
 }
 
 input[type="submit"], input[type="reset"] {
@@ -143,12 +165,155 @@ input[type="submit"], input[type="reset"] {
     padding: 10px 20px;
     cursor: pointer;
     margin-top: 10px;
+    width: 100%;
 }
 
 input[type="submit"]:hover, input[type="reset"]:hover {
     background-color: #004494;
+   
+}
+
+textarea {
+    height: 150px; 
+}
+
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+fieldset {
+    border: 1px solid #004d99;
+    padding: 15px;
+    margin: 10px 0;
 }
 
 .active {
     color: rgb(51, 166, 189); 
   }
+
+
+  @media screen and (min-width: 790px) {
+    main {
+        width: 790px;
+        margin: 0 auto;
+    }
+
+    form {
+        width: 100%; 
+        padding: 25px;
+    }
+
+    input[type="submit"], input[type="reset"] {
+        padding: 15px 25px;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"], input[type="number"], select, textarea {
+        padding: 12px;
+    }
+
+}
+
+
+@media screen and (max-width: 790px) and (min-width: 591px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        padding: 20px;
+    }
+
+    header {
+        text-align: center;
+        padding: 20px;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    h1, h2 {
+        font-size: 1.5em;
+    }
+
+    table {
+        font-size: 1em;
+    }
+
+    form {
+        width: 80%; 
+        padding: 18px;
+    }
+
+    input[type="submit"], input[type="reset"] {
+        padding: 10px 18px;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"], input[type="number"], select, textarea {
+        padding: 9px;
+    }
+}
+
+
+@media screen and (max-width: 590px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    main {
+        padding: 10px;
+        display: block;
+    }
+
+    table {
+        width: 40%;
+        font-size: 0.9em;
+    }
+
+    input[type="submit"], input[type="reset"] {
+        width: 100%;
+        padding: 12px;
+    }
+
+    form {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input[type="submit"], input[type="reset"] {
+        padding: 10px 15px;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"], input[type="number"], select, textarea {
+        padding: 8px;
+    }
+
+}
+
